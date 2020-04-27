@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>To-do App - Rohan Ganguly</title>
+		<script src="https://cdn.jsdelivr.net/npm/uuid@latest/dist/umd/uuidv4.min.js"></script>
+		<script src="./scripts/uuidv4.js"></script>
+		<script src="./scripts/todos-functions.js" defer></script>
+		<script src="./scripts/app.js" defer></script>
+		<link rel="icon" href="./images/favicon.png">
+		<link rel="stylesheet" href="./styles/styles.css">
+	<body>
+		<div class="header">
+			<div class="container">
+				<h1 class="header__title">To-do App</h1>
+				<h2 class="header__subtitle">What do you need to do?</h2>
+			</div>
+		</div>
+		<div class="actions">
+			<div class="actions__container">
+				<input class="input" type="text" id="search-todo" placeholder="search your todos list" />
+			<label class="checkbox">
+				<input type="checkbox" id="hide-completed" /> Hide Completed
+			</label>
+			</div>
+		</div>		
+		<div class="container">
+			<div id="todos"></div>
+			<form action="" id="todo-form">
+				<input class="input" type="text" placeholder="Enter todo" name="todo" />
+				<button class="button">Submit</button>
+		</form>
+		</div>
+		
+	</body>
+</html>
